@@ -1,7 +1,8 @@
 # NYC Yellow Taxi Databricks Pipeline (Bronze → Silver → Gold)
 
 ## Introduction
-The goal of this project is to perform data analytics on NYC Yellow Taxi data using various tools and technologies, including Databricks, Python, Databricks Notebooks, PySpark, and Spark SQL.
+The goal of this project is to perform  optimization on NYC Yellow Taxi data using various tools and technologies, including Databricks, Python, Databricks Notebooks, PySpark, Spark SQL, and Delta Lake. An end-to-end ETL pipeline built on ** Databricks (free edition)** using **PySpark** and **Delta Lake**.  
+This project demonstrates how to ingest raw NYC taxi trip data, clean and transform it, and optimize query performance using Delta features like `OPTIMIZE`.
 
 
 ## Architecture
