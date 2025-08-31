@@ -7,7 +7,7 @@ This project demonstrates how to ingest raw NYC taxi trip data, clean and transf
 
 ## Architecture
 
-image
+<img src="architecture.jpg">
 
 
 ## Technology Used
@@ -25,3 +25,13 @@ Here is the dataset used in the project - https://github.com/Utt0018/databricks-
 More info about the dataset can be found here: 
 
 Website - https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page
+
+## Analytics and Optimization Output on Gold Table
+
++---------------+------------------------------------------------+------------------+---------+---------+-------------+--------------------+------------------+----------------------+------------------+
+|Stage          |cat_counts                                      |distinct_loc_pairs|num_files|row_count|size_in_bytes|time_cat_groupby_sec|time_count_sec    |time_distincts_loc_sec|total_time_sec    |
++---------------+------------------------------------------------+------------------+---------+---------+-------------+--------------------+------------------+----------------------+------------------+
+|Before OPTIMIZE|{Short -> 40617, Medium -> 67353, Long -> 82642}|23576             |1        |190612   |517346       |0.5308501720428467  |0.5132696628570557|0.5394151210784912    |1.9198203086853027|
+|After OPTIMIZE |{Short -> 40617, Medium -> 67353, Long -> 82642}|23576             |1        |190612   |517346       |0.49340200424194336 |0.3314552307128906|0.46826910972595215   |1.6394078731536865|
++---------------+------------------------------------------------+------------------+---------+---------+-------------+--------------------+------------------+----------------------+------------------+
+
